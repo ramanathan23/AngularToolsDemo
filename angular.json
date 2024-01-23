@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularOptimization": {
+    "AngularToolsDemo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -43,7 +43,9 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "sourceMap": true,
+              "namedChunks": true
             },
             "development": {
               "buildOptimizer": false,
@@ -60,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "AngularOptimization:build:production"
+              "browserTarget": "AngularToolsDemo:build:production"
             },
             "development": {
-              "browserTarget": "AngularOptimization:build:development"
+              "browserTarget": "AngularToolsDemo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AngularOptimization:build"
+            "browserTarget": "AngularToolsDemo:build"
           }
         },
         "test": {
